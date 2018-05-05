@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+	<h2>
+	Chose country code from dropdown menu, and type daily income in this countries currency:
+	</h2>
+
+
+<select (change)="onSelect($event.target.value)">
+  <option *ngFor="let country of countries" [value]="country.id">{{country.name}}</option>
+</select>
+
+    <input [(ngModel)]="amount"/>
+    <button (click)="sendToServer()">Wyslij..</button>
+
+    <br/>
+    Monthly salary: {{ calculations.value}} PLN.
+
+
+  
+
+
