@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'app';
   amount: number = 0;
   calculations: CalculationsResult = {type:"nie wysłano", value: 0 };
-  baseUrl: string = "http://localhost:4200/api/calculateNettSalaryInPLN";
+  baseUrl: string = "/api/calculateNettSalaryInPLN";
   countries: Country[] = [
     { "id": 1, "name": "PL" },
     { "id": 2, "name": "UK" },
